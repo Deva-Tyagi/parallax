@@ -1,21 +1,23 @@
-import './App.css'
-import Navbar from './components/navbar/Navbar'
-import Privacy from './components/Privacy/Privacy'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-
+import React from 'react'
+import ImageOne from './components/ImageOne'
+import ImageTwo from './components/ImageTwo'
+import ImageThree from './components/ImageThree'
+import TextBox from './components/TextBox'
+import LuxuryVillaWebsite from './components/ImageOne'
+// import SUYOStory from './components/SUYOStory'
 
 function App() {
-
   return (
-    <>
-    <Router>
-      <Routes>
-        <Route path='/' element={<Navbar />} />
-        <Route path='/privacy' element={<Privacy />} />
-      </Routes>
-      </Router>
-    </>
-  )
+    <div>
+      {/* <ImageOne />
+      <TextBox />
+      <ImageTwo />
+      <TextBox />
+      <ImageThree /> */}
+      {/* <SUYOStory /> */}
+      <LuxuryVillaWebsite />
+    </div>
+  );
 }
 
-export default App
+export default App;
